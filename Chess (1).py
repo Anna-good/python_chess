@@ -81,7 +81,7 @@ def start_engine():
         
         if command == 2:
             engine = ChessEngine()
-            engine.upload_game("Magnus_Carlsen_-_Vladimir_Kramnik.txt")
+            engine.upload_game("Magnus_Carlsen_-_Vladimir_Kramnik.txt2")
 
         if command == 3 and not engine.can_handle_move(get_where_would_player_like_to_go(engine.which_players_move())):
             ask_to_continue()
@@ -94,6 +94,6 @@ def preview_game(path_to_file):
 
 def main():
     start_engine()
-    input()
+
 if __name__ == '__main__':
     main()
